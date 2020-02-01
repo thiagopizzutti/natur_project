@@ -63,3 +63,30 @@
         animation: moveButton 1.5s ease-in-out alternate;
     }
 }
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0rem 2rem 2rem rgba($color-black, .6);
+        transform: translateY(-5px);
+    }
+
+    &:active {
+        box-shadow: 2rem 0.5rem 1rem rgba($color-black, .7);
+        transform: translateY(0);
+    }
+}
